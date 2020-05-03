@@ -7,4 +7,4 @@ def Zarib3or5(n):
     print(f" ------- and the sum of all is {sum_num}")
     
     
-Zarib3or5(100)
+Zarib3or5(1000)
