@@ -1,0 +1,36 @@
+
+# My first algorithm
+
+x = int(input("Enter "))
+y = 0
+
+for i in range(2, x):
+    if (x % i) != 0:
+        y += 1
+
+if y == (x-2):
+    print (f"{x} is avaval")
+else:
+    print(f"{x} is NOT AVAL")
+
+
+# jadii :
+n = int(input("please enter your  number: "))
+
+def prime(x):
+    vaziat = True
+    for i in range(2, int(x**0.5) + 1):
+        if x % i == 0:
+            vaziat = False
+            break
+    return vaziat
+
+prime_count = 0
+last_prin_num = 0
+for i in range(1, n):
+    if prime(i):
+        print(i, end=" ")
+        prime_count +=1
+        last_prin_num = i
+print( " --- ")
+print(f"we have {prime_count} prime number between {1} and {n} and last prime number is {last_prin_num} ")
